@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crypto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
+</head>
+
+<body>
+    <header>
+        CRYPTO
+    </header>
+    <br>
+    <br>
+
+    <form id="formulaire" action="/action_page.php" method="post" name="crypto">
+        <fieldset>
+
+            <label for="description">Message à crypter :</label>
+            <br>
+            <textarea id="description" type="text" name="zone_text" value="Description" onkeyup="verif();"></textarea>
+            <br>
+            <input type="button" value="Crypter" onclick='document.forms["crypto"].elements["zone_text"].value = crypter();'>
+            <input type="button" value="Decrypter" onclick='document.forms["crypto"].elements["zone_text"].value = decrypter();'>
+            <br>
+        </fieldset>
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <script src="cryptage.js"></script>
+    <script src="decryptage.js"></script>
+    <script src="jsform.js"></script>
+
+</body>
+</html
